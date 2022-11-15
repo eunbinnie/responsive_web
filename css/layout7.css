@@ -1,0 +1,166 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #e3f2fd;
+}
+
+nav {
+  width: 100%;
+  height: 300px;
+  background-color: #bbdefb;
+}
+
+aside {
+  float: left;
+  width: 33.3333%;
+  height: 400px;
+  background-color: #90caf9;
+}
+
+article {
+  float: left;
+  width: 66.6666%;
+}
+
+.article1 {
+  height: 200px;
+  background-color: #64b5f6;
+}
+
+.article2 {
+  height: 200px;
+  background-color: #42a5f5;
+}
+
+section {
+  width: 100%;
+}
+
+.section1 {
+  clear: both;
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  background-color: #2196f3;
+}
+
+.section2 {
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  background-color: #1e88e5;
+}
+
+.section3 {
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  background-color: #1976d2;
+}
+
+.banner {
+  display: flex;
+  clear: both;
+  width: 100%;
+  height: 300px;
+  background-color: #4fc3f7;
+}
+
+.banner>div {
+  width: 22%;
+  margin: 5%;
+  background-color: #039be5;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #81d4fa;
+}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px) {
+  #wrap {
+    width: 100%;
+  }
+
+  .section1 {
+    width: 50%;
+  }
+
+  .section2 {
+    width: 50%;
+  }
+
+  .section3 {
+    display: none;
+  }
+
+  .banner>div {
+    width: 30%;
+  }
+
+  .banner>div:last-child {
+    display: none;
+  }
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+  .section1 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .section2 {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+  aside {
+    width: 100%;
+    height: 150px;
+  }
+
+  article {
+    float: none;
+    width: 100%;
+  }
+
+  .article1,
+  .article2 {
+    height: 150px;
+  }
+
+  .banner {
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+  }
+
+  .banner>div {
+    width: 90%;
+    height: 30%;
+    margin: 5%;
+    margin-bottom: 0;
+  }
+
+  .banner>div:nth-child(3) {
+    margin-bottom: 5%;
+  }
+}
